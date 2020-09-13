@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+	background-color: rgb(99, 106, 122);
+	font-family: 'Lato', sans-serif;
+	color: #eee;
+}
+
+a.custom-with {
+	width: 100px;
+}
+
+.card-notes {
+	min-height: 200px;
+}
+
+.logo {
+	width: 30%;
+}

@@ -4,13 +4,13 @@ const bcrypt = require('bcryptjs')
 const UserSchema = new Schema(
 	{
 		name: { type: String, required: true },
-		email: { type: String, required: true },
+		email: { type: String, required: true, unique: true },
 		password: { type: String, required: true },
 	},
 	{ timestamps: true }
 )
 
-UserSchema.methods.encrypPassword = async (password) => {
+UserSchema.methods.encryptPassword = async (password) => {
 	// salt metodo para encriptar contraseña
 	const salt = await bcrypt.genSalt(10)
 	return await bcrypt.hash(password, salt)

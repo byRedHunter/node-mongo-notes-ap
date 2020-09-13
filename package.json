@@ -18,11 +18,14 @@
 		"express-session": "^1.17.1",
 		"method-override": "^3.0.0",
 		"mongoose": "^5.10.5",
+		"morgan": "^1.10.0",
 		"passport": "^0.4.1",
 		"passport-local": "^1.0.0"
 	},
 	"devDependencies": {
+		"@handlebars/allow-prototype-access": "^1.0.3",
 		"dotenv": "^8.2.0",
+		"handlebars": "^4.7.6",
 		"npm-check-updates": "^9.0.1"
 	}
 }
